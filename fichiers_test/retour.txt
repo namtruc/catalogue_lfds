@@ -1,0 +1,581 @@
+####
+Ce fichier recapitule les differences entre les deux catalogues trouvees par le script
+Le terme FR renvoie au catalogue fruitstock avec les noms en espagnol, le terme ES renvoie au catalogue Ruffino.
+Toutes les references et noms donnes font reference au catalogue FR sauf si mention contraire
+Les produits qui devront etre verifies et compares manuellement a partir des catalogues originaux seront indiques, sinon les comparaisons et rectification pourront se faire uniquement a partir de ce fichier
+####
+
+
+
+
+
+####################
+##########
+Code 01
+FR : reference en doublon, ES : une seule reference.
+A verifier manuellement
+Attention ces produits peuvent apparaitre plus bas dans ce fichier en provoquant des faux positifs
+
+ex : FR 7206 Poires 500g
+     FR 7206 Poires 1kg
+     ES 7206 Poires 1kg
+##########
+
+Produit ref 1119 - 1442
+Produit ref 3190
+
+
+
+####################
+##########
+Code 02
+Ref FR presente au moins deux fois dans catalogue ES mais nom different
+A verifier manuellement
+ex : FR 7206 Poires
+     ES 7206 Poires Bio
+     ES 7206 Poires du verger
+##########
+
+  1937 Cacao BIO semilla grano crudo entero (env. 1 kg.)
+  6117 Algarroba BIO de la Alpujarra (Nueva Cosecha)
+  5037 Caviar cítrico/citrus australasica local, piezas de 0,10/0,15 grs., cultivo natural .Precio por bandeja de 200 grs.
+  5037 Caviar cítrico/citrus australasica local, piezas de 0,10/0,15 grs., cultivo natural (precio por bandeja de 500 grs.)
+  6019 Caviar cítrico/citrus australasica BIO, piezas de 0,10/0,15 grs. (precio por bandeja de 200 grs.)
+  6019 Caviar cítrico/citrus australasica BIO, piezas de 0,10/0,15 grs. (precio por bandeja de 500 grs.)
+  1356 Girasol pipa sin cáscara BIO (env. 1kg)
+  5215 Mango Irwin gourmet deshidratado a  baja temperatura. Crudo. En laminas
+  3868 Mango deshidratado semi-seco artesanal Palmer rojo de Brasil (env. 500 grs.)
+  1027 Anacardo crudo BIO (env. 1 kg.)
+  1816 Nuez de Macadamia sin cáscara BIO  (env. 1 kg.)
+  6005 Nuez Pecana sin cáscara BIO  (env. 1 kg.)
+
+
+
+####################
+##########
+Code 03
+Reference et nom en doublon cote espagnol, prix probablement different.
+A verifier manuellement 
+ex : FR 7206 Poires bio
+     ES 7206 Poires bio
+     ES 7206 Poires bio
+##########
+
+
+
+
+####################
+##########
+Code 04
+REF et nom non trouves dans catalogue ES
+ Le produit n'est probablement plus reference
+##########
+
+  6119 Aguacate Bacon BIO (con defectos superficiales en la piel). Finca con certificado ecológico desde 1985 ¡¡¡Oferta!!!
+  3944 Aguacate Bacon cocktail local
+  1022 Aguacate Hass BIO producción propia (nueva cosecha)
+  5051 Caña de azúcar negra local (fruto de la estación)
+  3227 Dátil Bahri fresco
+  3177 Higo Cuello de Dama semi-seco (nueva cosecha 2020). Cultivo orgánico sin certificar
+  6116 Higo de miel semi-seco de la Alpujarra BIO (mediano) ¡¡¡Excelente y especial!!!
+  1119 - 1442 Higo de miel semi-seco de la Alpujarra BIO (grande) ¡¡¡Excelente y especial!!!
+  1119 - 1442 Higo de miel semi-seco de la Alpujarra BIO (grande) env. 375 grs. cristal ¡¡¡Excelente y especial!!!
+  3273 Feijoa local
+  3704 Azufaifo local
+  3276 Kiwi local
+  1480 Lino marrón BIO (env. 500 grs.)
+  1978 Mango Bandai BIO
+  3214 Mango Haden local
+  6118 Mango Kent BIO (ligeras quemaduras superficiales al lado del pedúnculo producidas por el sol, pulpa perfecta). Finca con certificado ecológico desde 1985 ¡¡¡Oferta!!!
+  1508 Mango Kent BIO Empezando a madurar duro(Finca con certificado ecológico desde 1985) ¡¡¡Primera calidad, excelente!!!
+  1788 Mango Kent Gourmet BIO
+  6187 Mango Osteen BIO (ligeras quemaduras superficiales al lado del pedúnculo producidas por el sol, pulpa perfecta). Finca con certificado ecológico desde 1985 ¡¡¡Oferta!!!
+  3215 Mango Zill local
+  3757-3987 Pitahaya de diferentes colores (roja, blanca, violeta) local (grande) ¡¡¡Especial!!!
+  3027 Pimiento California rojo local
+  3659 Manzana variedad antigua de Sierra Nevada
+
+
+
+####################
+##########
+Code 05
+REF FR non trouve cote ES mais nom trouve au moins 2 fois
+A verifier manuellement
+ex : FR 7206 Poires bio
+     ES 7260 Poires bio
+     ES 7280 Poires bio
+##########
+
+
+
+
+####################
+##########
+Code 06
+REF differentes FR vs ES et nom identique
+Verification manuelle inutile
+ex : FR 7206 Poires bio
+     ES 7270 Poires bio
+##########
+
+  Ref FR = 3073.135 Naranja Valencialate
+  Ref ES = 3073
+
+
+
+####################
+##########
+Code 08
+Difference entre les noms
+Verification manuelle inutile
+ex : FR 7206 Poires 
+     ES 7206 Poires bio
+##########
+
+ 5147
+  FR = Almendra Lauren con cáscara semimollar. Sabor dulce, nueva cosecha, local (procedente de finca con cultivo orgánico sin certificar)
+  ES = Almendra Lauren con cáscara semimollar local. Sabor dulce, nueva cosecha (procedente de finca con cultivo orgánico sin certificar)
+
+ 5127
+  FR = Almendra Romera con cáscara local
+  ES = Almendra Romera con cáscara local (variedad antigua de calibre grande). Procedente de finca con cultivo orgánico sin certificar
+
+ 6059
+  FR = Hoja de Remolacha Baby BIO Producción Producción
+  ES = Hoja de Remolacha Baby BIO (producción propia)
+
+ 3032-5034
+  FR = Chirimoya local (Campa y Fino de Jete). Piezas grandes, nueva temporada
+  ES = Chirimoya local (Campa y Fino de Jete, producción propia). Piezas grandes
+
+ 1178
+  FR = Chirimoya BIO (produción propia, nueva temporada)
+  ES = Chirimoya BIO (produción propia)
+
+ 2004
+  FR = Chirimoya en RECONVERSIÓN a la agricultura ecológica (produción propia, nueva temporada)
+  ES = Chirimoya en RECONVERSIÓN a la agricultura ecológica (produción propia). Solo 90 kgs. en stock
+
+ 1626
+  FR = Col Kale Winterbor Crespa BIO baby. Producción Propia
+  ES = Col Kale Winterbor Crespa BIO baby (producción propia)
+
+ 1023
+  FR = Limón Verna BIO calibre grande, madurado en  planta
+  ES = Limón Verna BIO calibre grande-mediano, madurado en planta
+
+ 1320
+  FR = Dátil Deglet sin hueso BIO
+  ES = Dátil Deglet Nour sin hueso BIO
+
+ 3138
+  FR = Higo chumbo local ¡¡ máxima calidad!!
+  ES = Higo chumbo local ¡¡¡Máxima calidad!!!
+
+ 1615
+  FR = Higo fresco BIO (negro Brown Turkey y Verde granadino) ¡¡¡Excelente!!!
+  ES = Higo fresco BIO (Negro Brown Turkey granadino). Poca cantidad
+
+ 3209
+  FR = Granada local
+  ES = Granada local ¡¡¡Muy roja, excelente!!!
+
+ 1121
+  FR = Granada BIO
+  ES = Granada mollar BIO (piezas grandes y rosadas)
+
+ 3601-5043-3261
+  FR = Kaki diferentes varidades local (persimon, brillante...)
+  ES = Kaki local diferentes variedades (rojo brillante, persimon, ...)
+
+ 3265
+  FR = Kaki Fuyu local
+  ES = Kaki Fuyu local (procedente de finca con cultivo orgánico) ¡¡¡Calidad súper!!!
+
+ 3255
+  FR = Mango Keitt Local
+  ES = Mango Keitt local
+
+ 1138
+  FR = Mango Lipens BIO
+  ES = Mango Lipens BIO (muy poca cantidad)
+
+ 3769
+  FR = Mango Manzanillo Nuñez Local
+  ES = Mango Manzanillo Nuñez local
+
+ 1115
+  FR = Mango Osteen BIO. Primera calidad. Madurado en la planta
+  ES = Mango Osteen BIO ¡¡¡Primera calidad, madurado en la planta!!!
+
+ 1843
+  FR = Mango Palmer rojo BIO. Recién recolectado, piezas grandes
+  ES = Mango Palmer rojo BIO (piezas grandes)
+
+ 3248
+  FR = Mango Súper Haden local
+  ES = Mango Súper Haden local ¡¡¡Oferta!!!
+
+ 3112
+  FR = Melón piel de sapo
+  ES = Melón piel de sapo local
+
+ 1444
+  FR = Miel Huelva multiflora BIO cruda sin filtrar (env. 1 kg.)
+  ES = Miel de Huelva multiflora BIO cruda sin filtrar (env. 1 kg.)
+
+ 5107
+  FR = Miel de montaña (env. 1 kg)
+  ES = Miel de montaña (env. 1 kg.)
+
+ 6025
+  FR = Aceituna Aloreña aliñada BIO (env.800 grs.)
+  ES = Aceituna Aloreña aliñada BIO no pasteurizada (env. 800 grs.)
+
+ 5119
+  FR = Aceituna fermentada BIO (bote cristal 450 grs.) Varios tipos: frescas, semi-secas, secas, ...a elección (sin sal y sin ningún otro complemento)
+  ES = Aceituna fermentada no pasteurizada (env. 400 grs. cristal). Procedende de finca con cultivo natural
+
+ 1541
+  FR = Aceituna negra s/hueso semi-seca BIO (env. 500 grs.)
+  ES = Aceituna negra s/hueso semi-seca BIO no pasteurizada (env. 500 grs.) 
+
+ 5159
+  FR = Aceituna Manzanilla verde Gordal fresca local
+  ES = Aceituna Manzanilla Gordal verde fresca local
+
+ 1761
+  FR = Boniato violeta BIO (mediano/grande, nueva cosecha)¡¡Excelente!!
+  ES = Boniato violeta BIO (mediano/grande) ¡¡¡Nueva cosecha, excelente!!!
+
+ 3706
+  FR = Manzana Reineta local Sierra Nevada
+  ES = Manzana Reineta local de Sierra Nevada
+
+ 3145
+  FR = Manzana Starky roja local Sierra Nevada
+  ES = Manzana Starky roja local de Sierra Nevada
+
+ 5149
+  FR = Manzana roja Top Red local de Sierra Nevada
+  ES = Manzana roja Top Red local Sierra Nevada
+
+ 3752
+  FR = Uva pasa Moscatel en grano (nueva cosecha)en env. de 500 grs
+  ES = Uva pasa Moscatel en grano (nueva cosecha) env. 500 grs.
+
+
+
+
+####################
+##########
+Code 09
+Prix manquant cote espagnol
+ex FR 7206 Poires 5 euros
+   ES 7206 Poires -------
+##########
+
+
+
+
+####################
+##########
+Code 10
+Difference de prix entre les 2 catalogues
+Si le nom ES/FR est different, les 2 seront ecrit pour eviter certaines erreurs avec des changements de produits qui gardent la meme ref
+##########
+
+
+ 3001 Aguacate Bacon local (nueva temporada, c
+  ancien prix  5.88
+  nouveau prix 5.6
+
+ 1001 Aguacate Bacon BIO
+  ancien prix  6.15
+  nouveau prix 6.01
+
+ 1007-2364 Plátano Cavendish de las Islas BIO/RECO
+  ancien prix  4.08
+  nouveau prix 4.51
+
+ 1034 Zanahoria sin rama BIO
+  ancien prix  2.45
+  nouveau prix 2.32
+
+ 1117 Apio verde BIO
+  ancien prix  3.96
+  nouveau prix 3.82
+
+ 1178
+  nom FR : Chirimoya BIO (produción propia, nueva temporada)
+  nom ES : Chirimoya BIO (produción propia)
+  prix FR 5.06
+  prix ES 4.78
+
+ 2004
+  nom FR : Chirimoya en RECONVERSIÓN a la agricultura ecológica (produción propia, nueva temporada)
+  nom ES : Chirimoya en RECONVERSIÓN a la agricultura ecológica (produción propia). Solo 90 kgs. en stock
+  prix FR 4.19
+  prix ES 3.82
+
+ 1006 Col verde lisa BIO
+  ancien prix  3.0
+  nouveau prix 3.14
+
+ 6094 Limón BIO de 2ª categoría
+  ancien prix  1.22
+  nouveau prix 1.63
+
+ 3720 Agua de mar micro-filtrada hipertónica (
+  ancien prix  30.0
+  nouveau prix 19.5
+
+ 3379 Agua de mar micro-filtrada hipertónica (
+  ancien prix  45.0
+  nouveau prix 31.76
+
+ 4025 Extractor de zumo ANGEL JUICER Cool Pres
+  ancien prix  1000.0
+  nouveau prix 1259.03
+
+ 3138
+  nom FR : Higo chumbo local ¡¡ máxima calidad!!
+  nom ES : Higo chumbo local ¡¡¡Máxima calidad!!!
+  prix FR 5.45
+  prix ES 6.01
+
+ 1548 Higo seco turco BIO
+  ancien prix  10.4
+  nouveau prix 10.26
+
+ 3217 Guayaba local
+  ancien prix  5.12
+  nouveau prix 4.08
+
+ 3209
+  nom FR : Granada local
+  nom ES : Granada local ¡¡¡Muy roja, excelente!!!
+  prix FR 2.59
+  prix ES 2.52
+
+ 1121
+  nom FR : Granada BIO
+  nom ES : Granada mollar BIO (piezas grandes y rosadas)
+  prix FR 3.82
+  prix ES 3.0
+
+ 6120 Granada Purple Queen BIO
+  ancien prix  3.82
+  nouveau prix 3.41
+
+ 3601-5043-3261
+  nom FR : Kaki diferentes varidades local (persimon, brillante...)
+  nom ES : Kaki local diferentes variedades (rojo brillante, persimon, ...)
+  prix FR 3.41
+  prix ES 3.27
+
+ 3265
+  nom FR : Kaki Fuyu local
+  nom ES : Kaki Fuyu local (procedente de finca con cultivo orgánico) ¡¡¡Calidad súper!!!
+  prix FR 3.55
+  prix ES 3.41
+
+ 1618 Kaki Fuyu BIO
+  ancien prix  4.23
+  nouveau prix 3.96
+
+ 1606 Lúcuma cruda en polvo BIO (env. 1 kg.)
+  ancien prix  32.85
+  nouveau prix 30.11
+
+ 1639 Maca negra BIO (env. 1 kg.)
+  ancien prix  28.74
+  nouveau prix 27.37
+
+ 1639 Maca negra BIO (env. 500 grs.)
+  ancien prix  15.04
+  nouveau prix 14.37
+
+ 3146 Mazorca maiz dulce fresca (bandeja de 2 
+  ancien prix  3.14
+  nouveau prix 2.71
+
+ 3228 Mandarina Marisol local
+  ancien prix  3.55
+  nouveau prix 3.27
+
+ 3255
+  nom FR : Mango Keitt Local
+  nom ES : Mango Keitt local
+  prix FR 4.78
+  prix ES 4.37
+
+ 1171 Mango Keitt BIO
+  ancien prix  5.19
+  nouveau prix 5.45
+
+ 3190 Mango Osteen cultivo natural local ¡¡¡Pr
+  ancien prix  5.19
+  nouveau prix 4.78
+
+ 3190 Mango Osteen cultivo natural local ¡¡¡Pr
+  ancien prix  5.19
+  nouveau prix 4.78
+
+ 1115
+  nom FR : Mango Osteen BIO. Primera calidad. Madurado en la planta
+  nom ES : Mango Osteen BIO ¡¡¡Primera calidad, madurado en la planta!!!
+  prix FR 5.06
+  prix ES 5.19
+
+ 1843
+  nom FR : Mango Palmer rojo BIO. Recién recolectado, piezas grandes
+  nom ES : Mango Palmer rojo BIO (piezas grandes)
+  prix FR 5.06
+  prix ES 4.92
+
+ 3248
+  nom FR : Mango Súper Haden local
+  nom ES : Mango Súper Haden local ¡¡¡Oferta!!!
+  prix FR 4.08
+  prix ES 4.03
+
+ 3112
+  nom FR : Melón piel de sapo
+  nom ES : Melón piel de sapo local
+  prix FR 1.9
+  prix ES 1.77
+
+ 1052 Melón piel de sapo BIO
+  ancien prix  2.71
+  nouveau prix 2.59
+
+ 1101 Cebolla blanca seca BIO
+  ancien prix  2.04
+  nouveau prix 1.77
+
+ 5106-3735-3533 Guindilla fresca picante amarilla/roja/v
+  ancien prix  1.49
+  nouveau prix 1.63
+
+ 1043 Pimiento Rojo Ramiro BIO
+  ancien prix  4.78
+  nouveau prix 4.92
+
+ 3713 Sal del Himalaya molida (env. 1 kg.)
+  ancien prix  2.45
+  nouveau prix 2.71
+
+
+
+####################
+##########
+Code 11
+Promo manquante cote francais 
+################
+
+  3720 Agua de mar micro-filtrada hipertónica (bag in box 11 litros) promo 1
+  3379 Agua de mar micro-filtrada hipertónica (bag in box 20 litros) promo 1
+  3217 Guayaba local promo 3
+  3265 Kaki Fuyu local promo 3
+  1761 Boniato violeta BIO (mediano/grande, nueva cosecha)¡¡Excelente!! promo 1
+  1761 Boniato violeta BIO (mediano/grande, nueva cosecha)¡¡Excelente!! promo 2
+  1761 Boniato violeta BIO (mediano/grande, nueva cosecha)¡¡Excelente!! promo 3
+  5124-3852 Manzana Golden local de la Sierra (nueva cosecha) promo 3
+
+
+
+####################
+##########
+Code 12
+Promo manquante cote espagnol
+##########
+
+  1103 Lima-limón variedad india BIO (se recolecta con color) promo 2
+  3159 Kiwano local promo 2
+
+
+
+####################
+##########
+Code 13
+Difference entre les origines
+##########
+
+ 1189
+  FR = Irlande
+  ES = Irlanda
+
+ 1189
+  FR = Irlande
+  ES = Irlanda
+
+ 1034
+  FR = Malagua
+  ES = Málaga
+
+ 6077
+  FR = Malaga
+  ES = Málaga
+
+ 1121
+  FR = Granada
+  ES = Málaga
+
+ 1115
+  FR = Málaga
+  ES = Salobreña
+
+ 1151
+  FR = Malaga
+  ES = Málaga
+
+ 3155
+  FR = Malaga
+  ES = Málaga
+
+ 1358
+  FR = Paraguay
+Egipto
+  ES = Paraguay/Egipto
+
+ 1860
+  FR = Importacion
+  ES = Importación
+
+ 1496
+  FR = Galice
+  ES = Galicia
+
+ 1496
+  FR = Galice
+  ES = Galicia
+
+ 6110
+  FR = National
+  ES = Nacional
+
+ 6110
+  FR = National
+  ES = Nacional
+
+
+
+
+####################
+##########
+Code 14
+REF differentes et nom identique. A controler et corriger
+##########
+
+ REF FR = 1096
+ REF ES = 6073
+ Alga Kombu deshidratada BIO (env. 1 kg.)
+
+
+
+####################
+##########
+Code 07
+##########
