@@ -1,0 +1,82 @@
+code 01
+
+si nom identique -> ne pas marquer
+
+
+code 02
+
+si prix identique -> proposer changement nom
+sinon erreur montrer 2 ref
+
+
+
+code 03
+
+?? Le laisser en erreur
+
+
+code 04
+
+erreur
+
+
+code 05
+
+erreur
+
+
+code 06
+
+rien
+
+
+code 07
+
+erreur
+
+
+code 08
+
+proposer changement nom
+proposer input avec francais pre ecrit
+
+
+code 09
+
+erreur
+
+
+code 10
+
+a mettre en relation code 08
+demander confirmation ?? si pourcentage trop eleve ??
+
+
+code 11
+
+remplir automatiquement
+
+
+code 12
+
+remplir automatiquement
+
+
+code 13 
+
+remplir autimatiquement
+si plus de 3 lettres differentes -> demander
+
+
+code 14
+
+erreur
+
+
+Autre
+
+faire une troisieme proposition pour ignorer et passer le produit en erreur
+nettoyer fichier es et de des doublons
+faire un autre fichier retour avec toutes les modifications invisibles
+
+
