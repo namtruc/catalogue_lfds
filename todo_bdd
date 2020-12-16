@@ -1,6 +1,17 @@
+$ noire : ligne grosse erreur
+$ bleu : case nom fr a modifier
+$ jaune : ligne a verifier entierement ou case
+$ rouge : ligne a supprimer
+$ orange : case a modifier mais c pas oblige
+$ verte : case deja modifie
+
+
+
 code 01
 
 si nom identique -> ne pas marquer
+
+$ ligne jaune
 
 
 code 02
@@ -8,31 +19,42 @@ code 02
 si prix identique -> proposer changement nom
 sinon erreur montrer 2 ref
 
+$ case bleu et verte ou ligne jaune
 
 
 code 03
 
 ?? Le laisser en erreur
 
+$ ligne jaune
+
 
 code 04
 
 erreur
+
+$ ligne rouge
 
 
 code 05
 
 erreur
 
+$ ligne jaune
+
 
 code 06
 
 rien
 
+$ case orange
+
 
 code 07
 
 erreur
+
+$ ligne noire
 
 
 code 08
@@ -40,10 +62,14 @@ code 08
 proposer changement nom
 proposer input avec francais pre ecrit
 
+$ ligne jaune ou case verte/case bleu
+
 
 code 09
 
 erreur
+
+$ ligne jaune
 
 
 code 10
@@ -51,15 +77,21 @@ code 10
 a mettre en relation code 08
 demander confirmation ?? si pourcentage trop eleve ??
 
+$ case verte / case jaune
+
 
 code 11
 
 remplir automatiquement
 
+$ case verte
+
 
 code 12
 
 remplir automatiquement
+
+$ case verte
 
 
 code 13 
@@ -67,10 +99,15 @@ code 13
 remplir autimatiquement
 si plus de 3 lettres differentes -> demander
 
+$ case verte
+
 
 code 14
 
 erreur
+
+$ case orange
+
 
 
 Autre
