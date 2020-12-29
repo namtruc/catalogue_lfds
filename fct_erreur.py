@@ -16,7 +16,7 @@ def error (erreur1,erreur2,erreur3,erreur4,erreur5,erreur6,erreur7,erreur8,erreu
             'Le fichier retour.xlsx integre les differents erreures avec des codes couleurs\n'
 	    'Couleur verte : le contenu des cellules a ete mise a jour automatiquement avec les donnees du catalogue ES. A noter que ce sont les seules donnees qui ont ete modifiees automatiquement par le script\n'
             'Couleur jaune : concerne les traductions des designations et origine produit pour lesquelles le nom espagnol a ete mis a jour\n'
-            'Couleur marron : concerne les prix manquant ou avec une difference anormalement importante ainsi que les prix de gros qui auraient disparu cote espagnol. A verifier manuellement\n'
+            'Couleur marron : concerne les prix manquant ou avec une difference anormalement importante (plus de 30%) ainsi que les prix de gros qui auraient disparu cote espagnol. A verifier manuellement\n'
             'Couleur grise : erreur 04, produit probablement absent du catalogue ES\n'
             'Couleur rouge : erreurs rendant la comparaison automatique impossible, la ligne entiere sera a verifier manuellement\n'
             '####\n\n\n'

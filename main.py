@@ -1,10 +1,6 @@
-# 30 pourcent a preciser sur fichier retour
 # ajout verif case vide dans partie fr
-# faire fct exte modif fichier
-# faire fichier config
-# code 14 editer fichier texte
-# preciser deans fichier erreur case marron reduc
 # centrer references et origines es et fr
+# dossier ficheier_usr
 
 import os
 import csv
@@ -23,6 +19,7 @@ from openpyxl.styles import colors
 from openpyxl.styles import Font, Color, PatternFill
 
 dossier_python = os_path.abspath(os_path.split(__file__)[0])
+dossier_usr = dossier_python + '/fichiers_utilisateur'
 
 ##############################################################
 ##Emplacement colonnes
