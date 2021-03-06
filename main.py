@@ -325,8 +325,8 @@ if not len(list_fr) == len(set(list_fr)):
     for i in list_fr:
         if list_fr.count(i) > 1:
             dupl_fr.add(i)
-print (dupl_fr)
-input ()
+#print (dupl_fr)
+#input ()
 ##############################################################
 ##  Comparaison
 
