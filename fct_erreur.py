@@ -1,3 +1,6 @@
+import os
+from os import path as os_path
+
 def ecriture(liste,myfile):
 	for element in liste :
 		myfile.write(str(element))
@@ -5,6 +8,10 @@ def ecriture(liste,myfile):
 
 def error (erreur1,erreur2,erreur3,erreur4,erreur5,erreur6,erreur7,erreur8,erreur9,erreur10,erreur11,erreur12,erreur13,erreur14):
 
+    dossier_python = os_path.abspath(os_path.split(__file__)[0])
+    dossier_usr = dossier_python + '/fichiers_utilisateur'
+
+    os.chdir(dossier_usr)
 
     myfile = open("retour.txt", "w")
 
@@ -54,14 +61,14 @@ def error (erreur1,erreur2,erreur3,erreur4,erreur5,erreur6,erreur7,erreur8,erreu
     myfile.write('################\n\n')
     ecriture(erreur11,myfile)
 
-    myfile.write(
-            '\n\n\n####################\n'
-            '##########\n'
-            'Code 13\n'
-            'Difference entre les origines\n'
-            )
-    myfile.write('##########\n\n')
-    ecriture(erreur13,myfile)
+#    myfile.write(
+#            '\n\n\n####################\n'
+#            '##########\n'
+#            'Code 13\n'
+#            'Difference entre les origines\n'
+#            )
+#    myfile.write('##########\n\n')
+#    ecriture(erreur13,myfile)
 
     myfile.write(
             '\n\n\n####################\n'

@@ -1,6 +1,4 @@
 # ajout verif case vide dans partie fr
-# centrer references et origines es et fr
-# dossier ficheier_usr
 
 import os
 import csv
@@ -26,10 +24,10 @@ dossier_usr = dossier_python + '/fichiers_utilisateur'
 
 ref_fr = 0   #### A=0, B=1, etc...
 nom_trad = 1
-ori_trad = 2
+#ori_trad = 3###########
 nom_fr = 3
-ori_fr = 4
-prix_fr = 6
+#ori_fr = 4
+prix_fr = 13
 reduc1_fr = 8
 reduc2_fr = 9
 reduc3_fr = 10
@@ -37,7 +35,7 @@ reduc3_fr = 10
 ref_es = 0
 prix_es = 3
 nom_es = 2
-ori_es = 8####################
+#ori_es = 8####################
 reduc1_es = 4
 reduc2_es = 5
 reduc3_es = 6
@@ -83,14 +81,14 @@ def comp_nom (n_es,n_fr,mot,ref,erreur,x):
             liste_vert.append(a+str(b))
             liste_jaune.append(c+str(b))
 
-        elif erreur == erreur13 :
+        #elif erreur == erreur13 :
 
-            df_fr.loc[x,str(ori_fr)]= n_es
-            a = chr(ord('@')+ori_fr+1)
-            b = x+2
-            c = chr(ord('@')+ori_trad+1)
-            liste_vert.append(a+str(b))
-            liste_jaune.append(c+str(b))
+        #    df_fr.loc[x,str(ori_fr)]= n_es
+        #    a = chr(ord('@')+ori_fr+1)
+        #    b = x+2
+        #    c = chr(ord('@')+ori_trad+1)
+        #    liste_vert.append(a+str(b))
+        #    liste_jaune.append(c+str(b))
 
 
 def comp_prix (p_es,p_fr, ref, n_fr, n_es):
@@ -185,7 +183,7 @@ def comp_class ():
 
     comp_prix (dic_es['Prix_es'],dic_fr['Prix_fr'], dic_fr['R_fr'], dic_fr['N_fr'],dic_es['N_es'])
     comp_nom (dic_es['N_es'],dic_fr['N_fr'],'nom', dic_fr['R_fr'], erreur8,x)
-    comp_nom (dic_es['Ori_es'],dic_fr['Ori_fr'],'origine',dic_fr['R_fr'], erreur13,x)
+    #comp_nom (dic_es['Ori_es'],dic_fr['Ori_fr'],'origine',dic_fr['R_fr'], erreur13,x)
     comp_promo (dic_es['Reduc_es1'],dic_fr['Reduc_fr1'], dic_fr['N_fr'],dic_fr['R_fr'],'1')
     comp_promo (dic_es['Reduc_es2'],dic_fr['Reduc_fr2'], dic_fr['N_fr'],dic_fr['R_fr'],'2')
     comp_promo (dic_es['Reduc_es3'],dic_fr['Reduc_fr3'], dic_fr['N_fr'],dic_fr['R_fr'],'3')
@@ -280,8 +278,8 @@ df_es[reduca3_es] = df_es[reduca3_es].astype(float)
 
 df_es = df_es.drop_duplicates(subset=[prixa_es, refa_es, noma_es])# supr des vrais doublons
 ################################# VERIF PROMO
-df_es[prixa_es] = round((df_es[prixa_es] * 1.37),2)
-
+#df_es[prixa_es] = round((df_es[prixa_es] * 1.37),2)
+df_es[prixa_es] = round((df_es[prixa_es]),2)
 list2 = [] ### reconstruction de l'index
 
 for x in range (len(df_es.index)):
@@ -327,7 +325,8 @@ if not len(list_fr) == len(set(list_fr)):
     for i in list_fr:
         if list_fr.count(i) > 1:
             dupl_fr.add(i)
-
+print (dupl_fr)
+input ()
 ##############################################################
 ##  Comparaison
 
@@ -362,7 +361,7 @@ def fdico_es () :
                 'N_es' : df_es.iat[a,nom_es],
                 'R_es' : df_es.iat[a,ref_es],
                 'Prix_es' : df_es.iat[a,prix_es],
-                'Ori_es' : df_es.iat[a,ori_es],
+                #'Ori_es' : df_es.iat[a,ori_es],
                 'Reduc_es1' : df_es.iat[a,reduc1_es],
                 'Reduc_es2' : df_es.iat[a,reduc2_es],
                 'Reduc_es3' : df_es.iat[a,reduc3_es]
@@ -374,7 +373,7 @@ def fdico_fr () :
                 'N_fr' : df_fr.iat[x,nom_fr],
                 'R_fr' : df_fr.iat[x,ref_fr],
                 'Prix_fr' : df_fr.iat[x,prix_fr],
-                'Ori_fr' : df_fr.iat[x,ori_fr],
+                #'Ori_fr' : df_fr.iat[x,ori_fr],
                 'Reduc_fr1' : df_fr.iat[x,reduc1_fr],
                 'Reduc_fr2' : df_fr.iat[x,reduc2_fr],
                 'Reduc_fr3' : df_fr.iat[x,reduc3_fr]
@@ -389,7 +388,7 @@ for x in dupl_fr :  ### Verif si les doublons fr sont aussi des doublons es
 
     if not x in dupl_es :
 
-        erreur1.append("Produit ref "+x)
+        erreur1.append("Produit ref "+str(x))
         liste_erreur1.append(x)
 
 for x in range (len(df_fr.index)) :
@@ -498,7 +497,7 @@ def coloriage_ligne(liste, couleur):
 
 wb = load_workbook(filename = File_fr)
 
-wb.security.workbookPassword = '1ZERTY7'
+#wb.security.workbookPassword = '1ZERTY7'
 
 ws = wb['BDD']
 
@@ -551,7 +550,9 @@ coloriage_ligne(liste_gris, gris)
 coloriage_ligne(liste_noire, noire)
 coloriage_ligne(liste_rouge, rouge)
 
+os.chdir(dossier_usr)
 wb.save(filename = 'retour.xlsx')
+os.chdir(dossier_python)
 
 
 ### Font en arial 8 et refaire alignement ref
@@ -595,8 +596,10 @@ df_es['Promo'] = round((df_es['Promo']),2)
 df_es['Promo2'] = round((df_es['Promo2']),2)
 df_es['Promo3'] = round((df_es['Promo3']),2)
 
-df_es.to_excel('Comparaison.xlsx', engine='openpyxl', index = False)  
 os.remove("es.csv")
+
+os.chdir(dossier_usr)
+df_es.to_excel('Comparaison.xlsx', engine='openpyxl', index = False)  
 
 print("\nComparaison terminee, resultat sauve dans Comparaison.xlsx dans le dosier contenant le script\n")
 
